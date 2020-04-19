@@ -1,0 +1,27 @@
+from pynq import Overlay
+from pynq import MMIO
+ol = Overlay("your path here")
+ol.download()
+simple_cnn_ip=MMIO(your address here, 0x10000)
+TC=10
+TH=10
+TW=10
+TF=10
+TK=10
+S=0
+for z in range(0,TC):
+  for y in range(0,TH):
+    for x in range(0,TW):
+        input[z][y][x] = 1
+for u in range(0,TF)
+  for z in range(0,TC):
+    for y in range(0,TH):
+      for x in range(0,TW):
+        weight[u][z][y][x]=1
+for z in range(0,TF)
+  bias[z]=1
+for z in range(0,TF):
+  for y in range(0,1):
+    for x in range(0,1):
+        output[z][y][x] = 0
+        
